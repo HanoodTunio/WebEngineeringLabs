@@ -1,0 +1,69 @@
+h2 {
+    color: green;
+  }
+  
+  h3,
+  .my_div {
+    color: blue;
+    background-color: lightgreen;
+  }
+  
+  .my_div {
+    width: 50%;
+    height: 150px;
+    /* rem -----> relative to the root element ( <html> tag ) */
+    /* em ------> relative to the font size of the parent element  */
+    padding: 2em;
+    margin-top: 30px;
+  }
+  
+  .my_second_div {
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    margin: 20px 10px;
+    border: 2px solid green;
+  }
+  
+  .my_circle {
+    width: 300px;
+    height: 300px;
+  }
+  
+  #one {
+    border: 2px solid brown;
+    background-color: aquamarine;
+  }
+  
+  #two {
+    margin-top: 20px;
+    border: 2px solid rgb(60, 60, 157);
+    background-color: rgb(168, 186, 180);
+  }
+  
+  #three {
+    margin-top: 20px;
+    border: 2px solid rgb(115, 115, 199);
+    background-color: rgb(133, 159, 151);
+  }
+  
+  #four {
+    margin-top: 20px;
+    border: 2px solid blue;
+    background-color: rgb(183, 237, 221);
+  }
+  
+  .top_div {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background-color: bisque;
+  }
+  
+  .inner_div {
+    width: 100px;
+    height: 100px;
+    right: 50%;
+    top: 50%;
+    background-color: brown;
+  }
