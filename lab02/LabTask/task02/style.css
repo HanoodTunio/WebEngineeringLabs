@@ -1,0 +1,139 @@
+body {
+    background-color: #dc0759;
+}
+
+.main h5,
+.main h1 {
+    text-align: center;
+    color: rgb(255, 254, 251);
+}
+
+.icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 5vh;
+}
+
+.facebook,
+.insta,
+.linkedIn,
+.github,
+.twitter {
+    width: 40px; /* Adjust the width as needed */
+    margin: 5px;
+}
+
+section{
+    height: 40%;
+    width: 70%;
+    margin-top: 50px;
+    margin-left: 240px;
+    border-radius: 4px;
+    background-color: aliceblue;
+}
+
+h1{
+    padding-top: 50px;
+    padding-left: 50px;
+    text-align: left;
+    color: black;
+}
+
+.img-para {
+    display: flex;
+    column-gap: 20px;
+  }
+
+.img-para img{
+    margin-left: 40px;
+    width:auto;
+    height: 170px;
+}
+
+.img-para p {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.mainProjectDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects img {
+    width: 200px;
+    height: 150px;
+}
+.projectClass figcaption {
+    margin-left: 44px;
+    margin-bottom: 20px;
+}
+
+.skillslist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.skill i {
+    font-size: 40px; /* Adjust icon size as needed */
+    margin: 50px;
+}
+
+.skillslist ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.skillslist ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skillslist ul li i {
+    margin-right: 50px; /* Add some spacing between icon and text */
+}
+
+.skillslist ul li i:before {
+    font-size: 24px; /* Adjust icon size as needed */
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #dc0759;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ad0648;
+}

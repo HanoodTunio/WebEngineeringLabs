@@ -3,34 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task2</title>
-    <link rel="stylesheet" href="task2.css" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
-
   <body>
-    <h1>I am Hanood Mumtaz</h1>
-    <h4>Web Developer</h4>
+    <div class="main">
+      <h1>I am Hanood Mumtaz</h1>
+      <h5>Web Developer</h5>
+    </div>
+
     <div class="icons">
       <a href="https://www.linkedin.com/in/hanood-tunio-6335a31ba/"
-        ><img src="linkedIn.png" alt=""
+        ><img src="linkedIn.png" alt="" class="image linkedIn"
       /></a>
       <a href="https://github.com/HanoodTunio"
-        ><img src="github.png" alt=""
+        ><img src="github.png" alt="" class="image github"
       /></a>
       <a href="https://twitter.com/HanoodTunio"
-        ><img src="twitter.png" alt=""
+        ><img src="twitter.png" alt="" class="image twitter"
       /></a>
       <a href="https://www.facebook.com/hanood.mumtaz/"
-        ><img src="facebook.webp" alt=""
+        ><img src="facebook.webp" alt="" class="image facebook"
       /></a>
       <a href="https://www.instagram.com/hanood_tunio/"
-        ><img src="insta.webp" alt=""
+        ><img src="insta.webp" alt="" class="image insta"
       /></a>
     </div>
 
-    <section class="intro">
-      <div class="heading">
-        <h2>About Me</h2>
+    <section>
+      <div class="about">
+        <h1>About me</h1>
       </div>
       <div class="img-para">
         <img src="profile.png" alt="" />
@@ -90,58 +97,35 @@
         </div>
       </div>
     </section>
+
     <section class="skills">
       <h1>Skills</h1>
-      <div class="iconsSkills">
-        <ul class="horizontal-list">
+      <div class="skillslist">
+        <ul>
           <li>
-            <img src="react.png" alt="" />
-            <span>React Developer</span>
+            <i class="devicon-cplusplus-plain">CPP</i>
           </li>
-          <li>
-            <img src="python.png" alt="" />
-            <span>Python</span>
-          </li>
-          <li>
-            <img src="JS.jpg" alt="" />
-            <span>Javascript</span>
-          </li>
-          <li>
-            <img src="boot.png" alt="" />
-            <span>BootStrap</span>
-          </li>
-          <li>
-            <img src="htmlCSS.jpg" alt="" />
-            <span>HTML & CSS</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="contacts">
-      <h1>Contacts</h1>
 
-      <div class="ContactsIcon">
-        <a href="https://www.linkedin.com/in/hanood-tunio-6335a31ba/"
-          ><img src="linkedIn.png" alt=""
-        /></a>
-        <a href="https://github.com/HanoodTunio"
-          ><img src="github.png" alt=""
-        /></a>
-        <a href="https://twitter.com/HanoodTunio"
-          ><img src="twitter.png" alt=""
-        /></a>
-        <a href="https://www.facebook.com/hanood.mumtaz/"
-          ><img src="facebook.webp" alt=""
-        /></a>
-        <a href="https://www.instagram.com/hanood_tunio/"
-          ><img src="insta.webp" alt=""
-        /></a>
+          <li>
+            <i class="devicon-java-plain colored">Java</i>
+          </li>
+
+          <li>
+            <i class="devicon-python-plain colored">Python</i>
+          </li>
+
+          <li>
+            <i class="devicon-javascript-plain colored">Javascript</i>
+          </li>
+
+          <li><i class="devicon-html5-plain colored">HTML & CSS</i></li>
+        </ul>
       </div>
     </section>
 
     <section>
+      <h1>Contact Me</h1>
       <div class="container">
-        <h2>Contact Me</h2>
         <form action="#" method="POST">
           <input type="text" name="name" placeholder="Your Name" required />
           <input type="email" name="email" placeholder="Your Email" required />

@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    font-size:x-large;
+}
+h5{
+    color: red;
+    text-align: center;
+}
+
+.image{
+    width: 80%;
+    height: auto;
+}
+
+.col{
+    text-align: center;
+    float: left;
+    width: 25%;
+}
+
+.row{
+    display: table;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+}
