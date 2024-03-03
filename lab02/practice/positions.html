@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>positions</title>
+  </head>
+  <body>
+    <style>
+      .relative {
+        height: 80px;
+        width: 80px;
+        background-color: brown;
+        position: relative;
+        top: 9px;
+        left: 90px;
+      }
+
+      .absolute {
+        height: 80px;
+        width: 80px;
+        background-color: blueviolet;
+        position: absolute;
+        top: 80px;
+        left: 80px;
+      }
+
+      .fixed {
+        height: 80px;
+        width: 80px;
+        background-color: rgb(58, 182, 74);
+        position: fixed;
+        top: 50px;
+        right: 50px;
+      }
+
+      .z-index-example {
+        height: 80px;
+        width: 80px;
+        background-color: rgb(140, 129, 36);
+        position: relative;
+        z-index: 2;
+      }
+    </style>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+      obcaecati nulla optio rem maiores pariatur quaerat commodi ullam quasi
+      quos, consequuntur asperiores quod, consectetur unde! Maiores impedit quod
+      quae laborum.
+    </p>
+
+    <div class="relative">Relative Positioning</div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+      obcaecati nulla optio rem maiores pariatur quaerat commodi ullam quasi
+      quos, consequuntur asperiores quod, consectetur unde! Maiores impedit quod
+      quae laborum.
+    </p>
+
+    <div class="absolute">Absolute Positioning</div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+      obcaecati nulla optio rem maiores pariatur quaerat commodi ullam quasi
+      quos, consequuntur asperiores quod, consectetur unde! Maiores impedit quod
+      quae laborum.
+    </p>
+
+    <div class="fixed">Fixed Positioning</div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+      obcaecati nulla optio rem maiores pariatur quaerat commodi ullam quasi
+      quos, consequuntur asperiores quod, consectetur unde! Maiores impedit quod
+      quae laborum.
+    </p>
+
+    <div class="z-index-example">Z-index Example</div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus
+      obcaecati nulla optio rem maiores pariatur quaerat commodi ullam quasi
+      quos, consequuntur asperiores quod, consectetur unde! Maiores impedit quod
+      quae laborum.
+    </p>
+  </body>
+</html>
