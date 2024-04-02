@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example</title>
+    <style>
+      /* CSS rule to style div elements except those with class "exclude" */
+      div:not(.exclude) {
+        background-color: lightblue;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+      div :nth-child(1) {
+        background-color: brown;
+      }
+      p :nth-last-child(1) {
+        background-color: rgb(65, 168, 168);
+      }
+
+      div i:nth-last-of-type(1) {
+        font-size: 50px;
+      }
+
+      div p:only-of-type {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Example HTML with div elements -->
+    <div>This div will be styled</div>
+    <div class="exclude">This div will NOT be styled</div>
+    <div class="exclude">This div will be styled</div>
+    <div class="exclude">This div will NOT be styled</div>
+    <div class="exclude">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+        nihil dignissimos harum minima ratione. Aliquid soluta sed odit id
+        explicabo, quis accusamus eos ipsam eaque voluptate, ea consequuntur
+        deserunt magnam!
+        <i>This is me Hanood</i>
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+        consectetur a provident harum suscipit iure, facilis ad sapiente cumque
+        laboriosam, iusto, pariatur quo eos reprehenderit dignissimos explicabo
+        laudantium? Quaerat, at!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+        consectetur a provident harum suscipit iure, facilis ad sapiente cumque
+        laboriosam, iusto, pariatur quo eos reprehenderit dignissimos explicabo
+        laudantium? Quaerat, at!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+        consectetur a provident harum suscipit iure, facilis ad sapiente cumque
+        laboriosam, iusto, pariatur quo eos reprehenderit dignissimos explicabo
+        laudantium? Quaerat, at!
+      </p>
+    </div>
+
+    <div class="exclude">
+      <i>This is I one</i>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere quas
+        nihil est illo, unde dicta consequatur harum a sint. Accusamus pariatur
+        eaque dolorum harum unde ea vitae adipisci quas.
+      </p>
+      <i>This is I two</i>
+      <i>This is I three</i>
+      <i>This is I four</i>
+    </div>
+  </body>
+</html>
