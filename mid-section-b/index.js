@@ -16,17 +16,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         slides[index].classList.add("active");
-
         thumbnails[index].classList.add("active");
     }
-
 
     prevButton.addEventListener("click", function() {
         currentSlide = (currentSlide - 1 + slides.length) % slides.length;
         showSlide(currentSlide);
     });
 
-    // Thumbnail click functionality
     thumbnails.forEach((thumbnail, index) => {
         thumbnail.addEventListener("click", function() {
             currentSlide = index;
