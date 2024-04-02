@@ -1,0 +1,36 @@
+.container-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #container {
+    width: 60%;
+    height: 450px;
+    border: 2px solid;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .circledive {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(219, 178, 224);
+  }
+  
+  #Button {
+    height: 80px;
+    width: 180px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: rgb(211, 131, 230);
+    color: rgb(244, 232, 232);
+    font-size: medium;
+  }
+  
