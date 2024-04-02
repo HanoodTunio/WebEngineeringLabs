@@ -1,16 +1,17 @@
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    text-align: center; /* Center align the slider */
+}
+
 .slider {
-    display: flex;
-    justify-content: center; /* Center align the slides */
+    display: inline-block; /* Display the slider inline */
     overflow: hidden;
 }
 
 .slide {
-    display: none;
     max-width: 100%; /* Ensure images don't exceed container width */
-}
-
-.active {
-    display: block;
 }
 
 .thumbnails {
@@ -28,7 +29,6 @@
 
 .thumbnail.active {
     border: 2px solid blue;
-    padding: 10px;
 }
 
 button {
@@ -43,10 +43,9 @@ button {
 }
 
 .prev {
-    left: 10px;
-    
+    left: 130px;
 }
 
 .next {
-    right: 10px;
+    right: 130px;
 }
