@@ -1,33 +1,49 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const slides = document.querySelectorAll(".slide");
-    const thumbnails = document.querySelectorAll(".thumbnail");
-    const prevButton = document.querySelector(".prev");
-    const nextButton = document.querySelector(".next");
+const sliderImages = document.querySelectorAll('.slider-image');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+const thumbnails = document.querySelectorAll('.thumbnail');
 
-    let currentSlide = 0;
+let currentImageIndex = 0;
 
-    function showSlide(index) {
-        slides.forEach((slide) => {
-            slide.classList.remove("active");
-        });
+function showImage(index) {
+  sliderImages.forEach((image, imageIndex) => {
+    image.style.display = imageIndex === index ? 'block' : 'none';
+  });
+}
 
-        thumbnails.forEach((thumbnail) => {
-            thumbnail.classList.remove("active");
-        });
+function nextImage() {
+  currentImageIndex++;
+  currentImageIndex = currentImageIndex % sliderImages.length;
+  showImage(currentImageIndex);
+  activateThumbnail(currentImageIndex);
+}
 
-        slides[index].classList.add("active");
-        thumbnails[index].classList.add("active");
-    }
+function prevImage() {
+  currentImageIndex--;
+  if (currentImageIndex < 0) {
+    currentImageIndex = sliderImages.length - 1;
+  }
+  showImage(currentImageIndex);
+  activateThumbnail(currentImageIndex);
+}
 
-    prevButton.addEventListener("click", function() {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(currentSlide);
-    });
+function activateThumbnail(index) {
+  thumbnails.forEach((thumbnail) => {
+    thumbnail.classList.remove('active');
+  });
+  thumbnails[index].classList.add('active');
+}
 
-    thumbnails.forEach((thumbnail, index) => {
-        thumbnail.addEventListener("click", function() {
-            currentSlide = index;
-            showSlide(currentSlide);
-        });
-    });
-});
+showImage(currentImageIndex);
+activateThumbnail(currentImageIndex);
+
+prevButton.addEventListener('click', prevImage);
+nextButton.addEventListener('click', nextImage);
+
+thumbnails.forEach((thumbnail, index) => {
+  thumbnail.addEventListener('click', () => {
+    currentImageIndex = index;
+    showImage(currentImageIndex);
+    activateThumbnail(currentImageIndex);
+  });
+})

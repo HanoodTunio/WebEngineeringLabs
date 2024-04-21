@@ -2,25 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Image Slider</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <img src="./one.svg" alt="image1/" />
-    <!-- Your html Code -->
-
-    <div class="continer">
-      <img src="./one.svg" alt="One " />
-      <img src="./two.svg" alt="Two" />
-      <img src="./three.svg" alt="Three" />
-      <img src="./four.svg" alt="Four" />
-
-      <button class="prev">Previous</button>
-      <button class="next">Next</button>
+    <div class="container">
+      <img src="one.svg" alt="Image 1" class="slider-image active" />
+      <img src="two.svg" alt="Image 2" class="slider-image" />
+      <img src="three.svg" alt="Image 3" class="slider-image" />
+      <button class="prev" onclick="prevImage()">Next</button>
+      <button class="next" onclick="nextImage()">Previous</button>
     </div>
-
-    <script src="./index.js"></script>
+    <div class="thumbnails">
+      <img src="one.svg" alt="Thumbnail 1" class="thumbnail active" />
+      <img src="two.svg" alt="Thumbnail 2" class="thumbnail" />
+      <img src="three.svg" alt="Thumbnail 3" class="thumbnail" />
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
