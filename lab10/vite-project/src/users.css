@@ -1,0 +1,18 @@
+.container
+{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.user
+{
+  width: 200px;
+  padding: 10px;
+  background-color: aquamarine;
+  border-radius: 20px;
+}
+.user img 
+{
+  width: 100px;
+}

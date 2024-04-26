@@ -1,0 +1,17 @@
+section {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  align-items: center;
+}
+
+button {
+  height: 60px;
+  margin-top: 40px;
+}
+
+img {
+  max-width: 45px;
+}
