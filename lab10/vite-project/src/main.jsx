@@ -4,6 +4,5 @@ import App from "./App.jsx";
 import "./index.css";
 import CustomApp from "./CustomApp.jsx";
 import Users, { UsersWithImages } from "./Users.jsx";
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <UsersWithImages />
-);
+import ShapeContainer from "./ShapeContainer.jsx";
+ReactDOM.createRoot(document.getElementById("root")).render(<ShapeContainer />);
