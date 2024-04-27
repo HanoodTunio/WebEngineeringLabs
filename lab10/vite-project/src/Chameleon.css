@@ -1,0 +1,27 @@
+.container {
+  margin: 40px;
+  height: 100px;
+  display: flex;
+  background-color: aliceblue;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonArea {
+  gap: 20px;
+  margin: 20px 5px;
+}
+
+.buttonArea button {
+  height: 50px;
+  width: 80px;
+  margin: 5px;
+  font-weight: bold;
+  color: rgb(27, 23, 23);
+  border-radius: 10%;
+  border-color: white;
+}
+
+.buttonArea button:hover {
+  cursor: pointer;
+}

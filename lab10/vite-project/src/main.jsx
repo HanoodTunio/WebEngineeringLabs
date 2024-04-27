@@ -5,4 +5,6 @@ import "./index.css";
 import CustomApp from "./CustomApp.jsx";
 import Users, { UsersWithImages } from "./Users.jsx";
 import ShapeContainer from "./ShapeContainer.jsx";
-ReactDOM.createRoot(document.getElementById("root")).render(<ShapeContainer />);
+import UsersFilter from "./UsersFilter.jsx";
+import Chameleon from "./Chameleon.jsx";
+ReactDOM.createRoot(document.getElementById("root")).render(<Chameleon />);

@@ -9,7 +9,7 @@ export default function Circle(props) {
         height: `${size || 100}px`,
         width: `${size || 100}px`,
         borderRadius: "50%",
-        backgroundColor: `${color || '#e6e6fa'}`,
+        backgroundColor: `${color || '#077b8a'}`,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
