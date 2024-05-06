@@ -18,7 +18,7 @@ const Counter = () => {
         <div>
             <div className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
                 <div className="text-center"> 
-                    <p className="fs-2"><b>{count}</b></p>
+                    <p className="fs-1"><b>{count}</b></p>
                     <div className='d-flex'>
 
                         <button className="btn btn-success me-3" onClick={increment}>Increment</button>

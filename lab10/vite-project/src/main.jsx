@@ -8,4 +8,5 @@ import ShapeContainer from "./ShapeContainer.jsx";
 import UsersFilter from "./UsersFilter.jsx";
 import Chameleon from "./Chameleon.jsx";
 import Counter from "./Counter.jsx";
-ReactDOM.createRoot(document.getElementById("root")).render(<Counter />);
+import NameList from "./NameList.jsx";
+ReactDOM.createRoot(document.getElementById("root")).render(<NameList />);
