@@ -9,4 +9,5 @@ import UsersFilter from "./UsersFilter.jsx";
 import Chameleon from "./Chameleon.jsx";
 import Counter from "./Counter.jsx";
 import NameList from "./NameList.jsx";
-ReactDOM.createRoot(document.getElementById("root")).render(<NameList />);
+import ToDoList from "./ToDoList.jsx";
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
