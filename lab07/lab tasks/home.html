@@ -7,5 +7,14 @@
   </head>
   <body>
     <h1>Hello to the Future</h1>
+    <button id="signout" onclick="signOut()">Signout</button>
+
+    <script>
+      function signOut() {
+        console.log("hello world");
+        localStorage.clear();
+        window.location.href = "auth-with-storage.html";
+      }
+    </script>
   </body>
 </html>

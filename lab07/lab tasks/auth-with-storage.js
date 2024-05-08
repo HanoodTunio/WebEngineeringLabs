@@ -4,6 +4,20 @@ const loginButton = document.getElementById('login');
 const signoutButton = document.getElementById('signout');
 
 // Retrieve the stored user object from local storage
+
+// Create an object
+const user = {
+    username: 'Hanood',
+    password: '@@8885'
+};
+  
+  // Convert the object to a JSON string
+const userJSON = JSON.stringify(user);
+  
+  // Store the JSON string in local storage
+localStorage.setItem('user', userJSON);
+
+  
 const storedJSON = localStorage.getItem('user');   
 const storedUser = JSON.parse(storedJSON);
 
@@ -26,7 +40,3 @@ loginButton.addEventListener('click', () => {
 });
 
 
-signoutButton.addEventListener('click', () => {
-    localStorage.clear();
-    window.location.href = "/";
-})
