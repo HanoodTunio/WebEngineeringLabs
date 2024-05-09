@@ -4,7 +4,7 @@ import './ToDoList.css';
 
 function ToDoList(){
 
-    const [tasks, setTasks] = useState(['Eat Breakfast', 'Take a shower', 'Walk with a dog']);
+    const [tasks, setTasks] = useState([]);
     const [newTask, setNewTask] = useState("");
 
     function handleInputChange(event){
@@ -12,19 +12,15 @@ function ToDoList(){
     }
 
     function addTask(){
-
+        if(newTask.trim() !== ""){
+            setTasks(t => [...t, newTask]);
+            setNewTask("");
+        }
     }
 
     function deleteTask(index){
-
-    }
-
-    function moveTaskUp (index){
-
-    }
-
-    function moveTaskDown (index){
-        
+        const updateTasks = tasks.filter((element, i) => i !== index);
+        setTasks(updateTasks);
     }
 
     return(
@@ -50,10 +46,6 @@ function ToDoList(){
                 <li key={index}>
                     <span className="text">{task}</span>
                     <button className="delete-button" onClick={() => deleteTask(index)}>Delete</button>
-                    <button className="move-button" onClick={() => moveTaskUp(index)}>Up</button>
-                    <button className="move-button" onClick={() => moveTaskDown(index)}>Down</button>
-
-
                 </li>
 
             )}
