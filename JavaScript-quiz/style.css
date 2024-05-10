@@ -228,3 +228,58 @@ body {
 .service-icon i {
   color: black;
 }
+
+/* Contact styling */
+.contact-footer {
+  background-color: #36013f;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-contact-info,
+.footer-social {
+  flex: 1;
+}
+
+.footer-contact-info h3,
+.footer-social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-contact-info p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 1rem;
+}
