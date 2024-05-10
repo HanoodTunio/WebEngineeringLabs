@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(images/login.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  width: 420px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 30px 40px; /* Added padding for spacing */
+  border-radius: 10px; /* Added border-radius for rounded corners */
+}
+
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px; /* Added margin bottom for spacing */
+}
+
+.wrapper .input-box {
+  position: relative; /* Added position relative for positioning icon */
+  margin-bottom: 30px; /* Added margin bottom for spacing */
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.2); /* Corrected rgba value */
+  border-radius: 25px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px; /* Adjusted padding for spacing */
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  right: 15px; /* Adjusted right position for icon */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.wrapper .remember-forget {
+  display: flex;
+  align-items: center;
+  font-size: 14.5px;
+  justify-content: space-between;
+  margin: -15px 0 15px;
+}
+
+.remember-forget label input {
+  accent-color: #fff;
+  margin-right: 3px;
+  font-size: 14px;
+}
+
+.remember-forget a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forget a:hover {
+  text-decoration: underline;
+}
+
+.wrapper .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+
+.wrapper .register-link a {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 50px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Added transition for smooth hover effect */
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a {
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #da4f4f;
+}
