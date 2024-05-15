@@ -15,6 +15,7 @@ nameInput.addEventListener('input', (e) =>{
     nameElement.innerText = localStorage.getItem('Myname');
 })
 
+// Hdl
 
 ageElement.innerText = localStorage.getItem('Myage');
 
