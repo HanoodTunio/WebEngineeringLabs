@@ -14,8 +14,8 @@ export default function Circle(props) {
         justifyContent: "center",
         alignItems: "center",
         fontSize: "1.2rem",
-        fontWeight: "bold",
-      }}
+        fontWeight: "bold"
+        }}
     >
       I am Circle
     </div>

@@ -10,4 +10,6 @@ import Chameleon from "./Chameleon.jsx";
 import Counter from "./Counter.jsx";
 import NameList from "./NameList.jsx";
 import ToDoList from "./ToDoList.jsx";
-ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+import GameUser from "./GameUser.jsx";
+import Game from "./Game.jsx";
+ReactDOM.createRoot(document.getElementById("root")).render(<Game />);
